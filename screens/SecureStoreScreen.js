@@ -10,7 +10,7 @@ export default class SecureStoreScreen extends React.Component {
 
   state = {
     key: null,
-    value: null,
+    value: new Array(82000).join( "a" ),
   };
 
   _setValue = async (value, key) => {
